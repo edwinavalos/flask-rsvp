@@ -1,4 +1,4 @@
-from flask-rsvp_external.flask_app import create_app
+from rsvp.flask_app import create_app
 
 if __name__ == "__main__":
     app = create_app()

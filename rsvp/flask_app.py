@@ -1,8 +1,5 @@
 from flask import Flask
 import logging
-#@app.teardown_appcontext
-#def shutdown_session(exception=None):
-#    db_session.remove()
 
 def create_app(config_filename=None):
     app = Flask(__name__, instance_relative_config=True)
