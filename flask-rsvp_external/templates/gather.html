@@ -1,0 +1,46 @@
+<html>
+<header>
+    {% include 'css.html' %}
+</header>
+<body>
+<h1>How can we contact you?</h1>
+<div class="container container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-horizontal" id=sr_form method="POST" action="/gather">
+                <div class="form-group row">
+                    <label class="control-label">{{ form.first_name.label }}</label>
+                    <div>
+                        <input type="text" class="form-control" name="first_name" placeholder="Bob">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="control-label">{{ form.last_name.label }}</label>
+                    <div>
+                        <input type="text" class="form-control" name="last_name" placeholder="Hope">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="control-label">{{ form.email.label }}</label>
+                    <div>
+                        <input type="text" class="form-control" name="email" placeholder="bobby@hope.com">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="control-label">{{ form.address.label }}</label>
+                    <div>
+                        <textarea id=text class="form-control" columns="300px" rows="4" name="address" placeholder="Where do you live!?"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div>
+                        <input type="submit" class="btn" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <h3>A few words from our sponsors. As you can see you can put a lot of text in this field and it should responsively wrap around without pushing textfields to the side. You can replace whatever is in here with an image of text if you'd like.</h3>
+        </div>
+</body>
+</html>
